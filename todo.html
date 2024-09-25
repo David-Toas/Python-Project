@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Todo List Application Using Tkinter</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+        background-color: #f4f4f4;
+        padding: 20px;
+      }
+      h1,
+      h2,
+      h3 {
+        color: #333;
+      }
+      ul {
+        margin: 0 0 20px 20px;
+      }
+      li {
+        margin-bottom: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Todo List Application Using Tkinter</h1>
+
+    <h2>1. Overview</h2>
+    <p>
+      This application is a Todo List Manager built using Python and Tkinter for
+      the graphical user interface (GUI). It allows users to:
+    </p>
+    <ul>
+      <li>Add tasks</li>
+      <li>Mark tasks as completed</li>
+      <li>Edit existing tasks</li>
+      <li>Delete selected tasks</li>
+    </ul>
+    <p>
+      The app offers a simple, user-friendly interface with task management
+      features such as scrolling and interactive buttons.
+    </p>
+
+    <h2>2. Key Features</h2>
+    <h3>1. Task Addition</h3>
+    <ul>
+      <li>Users can enter tasks through a text input box.</li>
+      <li>
+        Tasks are displayed dynamically, and pressing Enter or clicking the Add
+        button will add them to the list.
+      </li>
+    </ul>
+
+    <h3>2. Task Completion</h3>
+    <ul>
+      <li>
+        Each task has a checkbox that allows users to mark it as completed.
+      </li>
+      <li>
+        Completed tasks are displayed with a strikethrough and the background
+        changes to green, indicating that the task is done.
+      </li>
+    </ul>
+
+    <h3>3. Task Editing</h3>
+    <ul>
+      <li>
+        Users can edit a task by first selecting it (via the checkbox), then
+        clicking the Edit button.
+      </li>
+      <li>
+        A dialog box appears, allowing users to update the task's description.
+      </li>
+    </ul>
+
+    <h3>4. Task Deletion</h3>
+    <ul>
+      <li>Selected tasks can be deleted by clicking the Delete button.</li>
+      <li>
+        A confirmation message appears to ensure tasks aren't accidentally
+        removed.
+      </li>
+    </ul>
+
+    <h2>3. User Interface</h2>
+    <ul>
+      <li>
+        Scroll-Enabled Task List: The application supports an unlimited number
+        of tasks with a scrollable frame.
+      </li>
+      <li>
+        Minimalist Design: The background is styled in a calm blue-grey color
+        (#646683), keeping the focus on tasks.
+      </li>
+      <li>
+        Interactive Buttons: Users can add, edit, and delete tasks via buttons
+        or keyboard shortcuts, making it efficient to use.
+      </li>
+    </ul>
+
+    <h2>4. Detailed Walkthrough</h2>
+    <h3>1. Adding a Task</h3>
+    <p>When a user enters a task and presses Add, it is:</p>
+    <ul>
+      <li>Displayed in a new task frame with a checkbox and a label.</li>
+      <li>Stored internally for future actions (edit/delete).</li>
+    </ul>
+
+    <h3>2. Completing a Task</h3>
+    <p>By clicking the checkbox, a task is marked as completed:</p>
+    <ul>
+      <li>The task's text is crossed out (via strikethrough styling).</li>
+      <li>The background changes to green, providing visual feedback.</li>
+    </ul>
+
+    <h3>3. Editing a Task</h3>
+    <p>
+      After checking a task, the Edit button allows the user to change its text.
+    </p>
+    <ul>
+      <li>A popup dialog appears where the user can edit the task.</li>
+      <li>Once edited, the task’s checkbox is automatically unchecked.</li>
+    </ul>
+
+    <h3>4. Deleting a Task</h3>
+    <p>
+      By selecting one or more tasks and pressing Delete, the user is asked to
+      confirm the action via a dialog box.
+    </p>
+    <ul>
+      <li>
+        Upon confirmation, the selected tasks are removed from both the display
+        and the internal storage.
+      </li>
+    </ul>
+
+    <h2>5. Technical Highlights</h2>
+    <ul>
+      <li>Tkinter Framework: Used for building the entire GUI.</li>
+      <li>
+        Canvas and Scrollbar: The app uses a scrollable canvas to manage
+        multiple tasks within the same window.
+      </li>
+      <li>
+        Dynamic UI Updates: Tasks are dynamically added, edited, or removed in
+        real-time without needing to restart the application.
+      </li>
+      <li>
+        Event Binding: The Enter key is bound to the task addition feature,
+        enhancing user interaction.
+      </li>
+    </ul>
+
+    <h2>6. Conclusion</h2>
+    <p>
+      This <b>Todo List application</b> provides a a simple yet powerful way to
+      manage tasks efficiently. It leverages Python's Tkinter library for a
+      clean user interface and features robust task management capabilities like
+      adding, editing, completing, and deleting tasks—all within a responsive
+      and scrollable design
+    </p>
+  </body>
+</html>
